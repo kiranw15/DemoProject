@@ -27,7 +27,8 @@ public class AppTest
 	@BeforeClass
 	public void setUp()
 	{	
-		System.setProperty("webdriver.chrome.driver", "C:\\\\Users\\\\ashish\\\\Desktop\\\\TestNG_Selenium_WorkSpace\\\\SeleniumPractice\\\\Drivers\\\\Chrome_Driver\\\\chromedriver.exe");
+		Configurations.setUp();
+		System.setProperty("webdriver.chrome.driver", "Drivers\\Chrome_Driver\\chromedriver.exe");
 		Commons.clearFolder(downloadFilepath);
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 	       chromePrefs.put("profile.default_content_settings.popups", 0);
@@ -42,7 +43,7 @@ public class AppTest
 		
 		
 		driver =new ChromeDriver(options);
-		driver.get("http://product.socbuilder.com/");
+		driver.get(Configurations.getURL());
 		
 	}
 	
@@ -54,8 +55,8 @@ public class AppTest
 	
 	@Test(priority=2)
 	public void Login() {
-	driver.findElement(By.name("username")).sendKeys("admin");
-	driver.findElement(By.xpath("//input[@name='password']")).sendKeys("123");
+	driver.findElement(By.name("username")).sendKeys(Configurations.getUserID());
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(Configurations.getPassword());
 	driver.findElement(By.xpath("//button[@name='submit_login']")).click();
 	Boolean flag = driver.findElement(By.xpath("//img[contains(@src, 'http://product.socbuilder.com//assets/backend/images/success.png')]")).isDisplayed();
 	Assert.assertTrue(flag);
@@ -120,8 +121,9 @@ public class AppTest
 	
 	//To quit the browser after everything is executed
 	@AfterClass
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
 	driver.findElement(By.xpath("//span[text()=' Builder']")).click();
+	Thread.sleep(1000);
 	driver.quit();
 	}
 	
