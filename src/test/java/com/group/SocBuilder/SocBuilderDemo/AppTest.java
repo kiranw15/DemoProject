@@ -77,7 +77,7 @@ public class AppTest
 		float no_student=98;
 		float no_faculty=12;
 		float result =no_student/no_faculty;
-		DecimalFormat df	 = new DecimalFormat("#.##");
+		DecimalFormat df= new DecimalFormat("#.##");
 		df.setRoundingMode(RoundingMode.DOWN);
 		
 		driver.findElement(By.xpath("//span[text()='SOC Metrics']")).click();
@@ -96,9 +96,7 @@ public class AppTest
 	@Test(dataProvider="getData",priority=5)
 	public void testFTE(String semester,String yearSTR) throws InterruptedException{
 		
-		/*driver.findElement(By.xpath("//span[text()='SOC Metrics']")).click();
-		Thread.sleep(2000);
-*/		driver.findElement(By.xpath("//a[text()='FTE ']")).click();
+		driver.findElement(By.xpath("//a[text()='FTE ']")).click();
 		Select term=new Select(driver.findElement(By.xpath("//select[@id='term']")));
 		Select year=new Select(driver.findElement(By.xpath("//select[@id='year']")));
 		term.selectByValue(semester);
