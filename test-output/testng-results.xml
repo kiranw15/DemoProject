@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="68100" started-at="2020-01-05T07:35:48Z" finished-at="2020-01-05T07:36:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="68100" started-at="2020-01-05T07:35:48Z" finished-at="2020-01-05T07:36:57Z">
+      <class name="com.group.SocBuilder.SocBuilderDemo.AppTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="setUp" is-config="true" duration-ms="12837" started-at="2020-01-05T13:05:49Z" finished-at="2020-01-05T13:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPageTitle()[pri:1, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="verifyPageTitle" duration-ms="24" started-at="2020-01-05T13:06:01Z" finished-at="2020-01-05T13:06:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle -->
+        <test-method status="PASS" signature="Login()[pri:2, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="Login" duration-ms="8696" started-at="2020-01-05T13:06:01Z" finished-at="2020-01-05T13:06:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="DownloadReports()[pri:3, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="DownloadReports" duration-ms="3950" started-at="2020-01-05T13:06:10Z" finished-at="2020-01-05T13:06:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadReports -->
+        <test-method status="PASS" signature="testSFR()[pri:4, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="testSFR" duration-ms="8822" started-at="2020-01-05T13:06:14Z" finished-at="2020-01-05T13:06:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSFR -->
+        <test-method status="PASS" signature="testFTE(java.lang.String, java.lang.String)[pri:5, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="testFTE" duration-ms="6317" started-at="2020-01-05T13:06:23Z" data-provider="getData" finished-at="2020-01-05T13:06:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Fall]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFTE -->
+        <test-method status="PASS" signature="testFTE(java.lang.String, java.lang.String)[pri:5, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="testFTE" duration-ms="5831" started-at="2020-01-05T13:06:29Z" data-provider="getData" finished-at="2020-01-05T13:06:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Winter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFTE -->
+        <test-method status="PASS" signature="testFTE(java.lang.String, java.lang.String)[pri:5, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="testFTE" duration-ms="12446" started-at="2020-01-05T13:06:35Z" data-provider="getData" finished-at="2020-01-05T13:06:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Spring]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFTE -->
+        <test-method status="PASS" signature="testFTE(java.lang.String, java.lang.String)[pri:5, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="testFTE" duration-ms="6823" started-at="2020-01-05T13:06:47Z" data-provider="getData" finished-at="2020-01-05T13:06:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Summer]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2020]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFTE -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.group.SocBuilder.SocBuilderDemo.AppTest@4f933fd1]" name="tearDown" is-config="true" duration-ms="2287" started-at="2020-01-05T13:06:54Z" finished-at="2020-01-05T13:06:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.group.SocBuilder.SocBuilderDemo.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
