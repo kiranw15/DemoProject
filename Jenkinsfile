@@ -1,8 +1,8 @@
 pipeline {
     agent any
 	tools {
-	jdk 'JAVA_8'
-	maven 'MAVEN 3.6.3'
+	jdk 'JDK8'
+	maven 'MAVEN 3_6_3'
 	}
     stages {
         stage ('Compile Stage') {
